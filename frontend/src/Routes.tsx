@@ -3,7 +3,7 @@ import Home from "pages/Home";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 const Routes = () => {
-    //14 min
+
     return (
         <BrowserRouter>
             <Switch>
