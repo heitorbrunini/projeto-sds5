@@ -1,1 +1,1 @@
-export const BASE_URL = process.env.SPRING_BACKEND_URL ??'http://localhost:8080';
+export const BASE_URL = 'https://projeto-sds5-production.up.railway.app';
