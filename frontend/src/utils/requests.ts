@@ -1,1 +1,1 @@
-export const BASE_URL = 'https://projeto-sds5-production.up.railway.app';
+export const BASE_URL = 'http://localhost:8080';

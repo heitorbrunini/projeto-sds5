@@ -1,4 +1,4 @@
-NSERT INTO tb_sellers(name) VALUES ('Logan');
+INSERT INTO tb_sellers(name) VALUES ('Logan');
 INSERT INTO tb_sellers(name) VALUES ('Anakin');
 INSERT INTO tb_sellers(name) VALUES ('BarryAllen');
 INSERT INTO tb_sellers(name) VALUES ('Kal-El');
