@@ -24,6 +24,8 @@ O projeto está dividido em duas partes principais:
 - **GET /sales/sum:** Retorna a soma total das vendas agrupadas por vendedor.
 - **GET /sales/success:** Retorna a contagem de vendas bem-sucedidas agrupadas por vendedor.
 
+![Conceitual](./sds5.png)
+
 ## Configuração do Ambiente de Desenvolvimento
 
 1. **Clonar o Repositório:**
