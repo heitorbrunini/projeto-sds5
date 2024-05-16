@@ -15,7 +15,7 @@ O SDS5 é um programa desenvolvido em React e Spring Boot para análise de venda
 O projeto está dividido em duas partes principais:
 
 - **frontend:** Contém o código fonte do frontend desenvolvido em React com Typescript. Este diretório é gerenciado com Yarn.
-- **backend:** Contém o código fonte do backend desenvolvido em Spring Boot com Java. Este diretório é gerenciado com Maven.
+- **backend:** Contém o código fonte do backend desenvolvido em Spring Boot e testes em JUnit 5 com Java. Este diretório é gerenciado com Maven.
 
 ## Endpoints da API
 
@@ -45,6 +45,13 @@ O projeto está dividido em duas partes principais:
 
 4. **Acessar o Aplicativo:**
 - O aplicativo estará disponível em `http://localhost:3000` por padrão.
+
+
+## Testes (Backend)
+- O backend deste projeto inclui testes para os serviços SaleServiceTest e SellerServiceTest utilizando JUnit 5 e Mockito.
+- SaleServiceTest: Testes para as funcionalidades do `SaleService`.
+- SellerServiceTest: Testes para as funcionalidades do `SellerService`.
+
 
 ## Contribuição
 
