@@ -10,8 +10,20 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 @Entity
 @Table(name = "tb_sales")
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@EqualsAndHashCode(of="id")	
 public class Sale {
 
 	@Id
@@ -26,65 +38,5 @@ public class Sale {
 	@JoinColumn(name = "seller_id")
 	private Seller seller;
 
-	public Sale() {
-
-	}
-
-	public Sale(Long id, Integer visited, Integer deals, Double amount, LocalDate date, Seller seller) {
-		this.id = id;
-		this.visited = visited;
-		this.deals = deals;
-		this.amount = amount;
-		this.date = date;
-		this.seller = seller;
-	}
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public Integer getVisited() {
-		return visited;
-	}
-
-	public void setVisited(Integer visited) {
-		this.visited = visited;
-	}
-
-	public Integer getDeals() {
-		return deals;
-	}
-
-	public void setDeals(Integer deals) {
-		this.deals = deals;
-	}
-
-	public Double getAmount() {
-		return amount;
-	}
-
-	public void setAmount(Double amount) {
-		this.amount = amount;
-	}
-
-	public LocalDate getDate() {
-		return date;
-	}
-
-	public void setDate(LocalDate date) {
-		this.date = date;
-	}
-
-	public Seller getSeller() {
-		return seller;
-	}
-
-	public void setSeller(Seller seller) {
-		this.seller = seller;
-	}
 
 }
