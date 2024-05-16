@@ -14,8 +14,7 @@ public interface SaleRepository extends JpaRepository<Sale, Long> {
 	@Query ("SELECT new com.b9dev.projetoSDS.dto.SaleSumDTO (obj.seller, SUM (obj.amount))"
 			+ " FROM Sale AS obj GROUP BY obj.seller")
 	List<SaleSumDTO> amountGruoupedBySeller();
-	//Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: Unable to locate appropriate constructor on class [com.b9dev.projetoSDS.dto.SaleSuccessSumDTO]. 
-	//Expected arguments are: com.b9dev.projetoSDS.entities.Seller, long, long [SELECT new com.b9dev.projetoSDS.dto.SaleSuccessSumDTO (obj.seller, SUM (obj.visited), SUM(obj.deals)) FROM com.b9dev.projetoSDS.entities.Sale AS obj GROUP BY obj.seller]
+	
 	@Query ("SELECT new com.b9dev.projetoSDS.dto.SaleSuccessSumDTO (obj.seller, SUM (obj.visited), SUM (obj.deals))"
 			+" FROM Sale AS obj GROUP BY obj.seller")
 	List<SaleSuccessSumDTO> SuccessGruoupedBySeller();
